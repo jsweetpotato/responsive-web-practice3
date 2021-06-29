@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>University Website Design Tutorial</title>
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times fa-2x" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">COURSE</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars fa-2x" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>World's Biggest University</h1>
+      <p>Making website is now one of the easiest thing in the world. you just need to learn HTML, CSS, <br>JavaScript and you are good to go.</p>
+      <a href="" class="hero-btn">Visit Us To know More</a>
+      </button>
+    </div>
+  </section>
+
+  <!-- Course -->
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <div class="row">
+      <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat numquam ea fugiat voluptatem vero eligendi labore pariatur minima velit.</p>
+      </div>
+      <div class="course-col">
+        <h3>Degree</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat numquam ea fugiat voluptatem vero eligendi labore pariatur minima velit.</p>
+      </div>
+      <div class="course-col">
+        <h3>Post Gr</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat numquam ea fugiat voluptatem vero eligendi labore pariatur minima velit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus -->
+  <section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <div class="row">
+      <div class="campus-col">
+        <img src="images/london.png" alt="london images">
+        <div class="layer">
+          <h3>LONDON</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  let navLinks = document.getElementById('navLinks');
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+
+  </script>
+</body>
+</html>
