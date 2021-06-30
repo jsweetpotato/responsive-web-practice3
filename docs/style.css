@@ -55,10 +55,8 @@ p {
 
 /* header */
 .header{
-  min-height: 100vh; 
   width: 100%;
   position: absolute;
-  overflow: hidden;
   z-index: 10;
 }
 
@@ -162,7 +160,7 @@ nav .nav-links ul li:hover::after {
   margin-bottom: 5%;
   padding: 20px 12px;
   box-sizing: border-box;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 .course .course-col h3 {
@@ -219,7 +217,7 @@ nav .nav-links ul li:hover::after {
   bottom: 0;
   position: absolute;
   opacity: 0;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 .campus-col .layer:hover h3 {
