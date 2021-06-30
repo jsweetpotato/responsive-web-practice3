@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
   <title>University Website Design Tutorial</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <nav>
       <a href="index.html"><img src="images/logo.png" alt="logo"></a>
       <div class="nav-links" id="navLinks">
-        <i class="fas fa-times fa-2x" onclick="hideMenu()"></i>
+        <i class="fas fa-times fa-2x"  onclick="hideMenu()"></i>
         <ul>
           <li><a href="">HOME</a></li>
           <li><a href="">ABOUT</a></li>
@@ -24,6 +25,11 @@
       </div>
       <i class="fas fa-bars fa-2x" onclick="showMenu()"></i>
     </nav>
+    <div class="background" id="background"></div>
+  </section>
+
+  <!-- Main -->
+  <section class="main">
     <div class="text-box">
       <h1>World's Biggest University</h1>
       <p>Making website is now one of the easiest thing in the world. you just need to learn HTML, CSS, <br>JavaScript and you are good to go.</p>
@@ -150,17 +156,5 @@
       <i class="fab fa-linkedin-in"></i>
     </div>
   </footer>
-
-  <script>
-  let navLinks = document.getElementById('navLinks');
-    function showMenu(){
-      navLinks.style.right = "0";
-    }
-
-    function hideMenu(){
-      navLinks.style.right = "-200px";
-    }
-
-  </script>
 </body>
 </html>
